@@ -9,7 +9,7 @@ $harga = $_POST['harga_bk'];
 
 //query
 
-$query =  "INSERT INTO buku(judul_buku , penerbit_buku , genre_buku , harga_buku) VALUES('$judul' , '$genre' , '$harga')";
+$query =  "INSERT INTO buku(judul_buku , genre_buku , harga_buku) VALUES('$judul' , '$genre' , '$harga')";
 
 if (mysqli_query($conn , $query)) {
 	# code redirect setelah insert ke index
